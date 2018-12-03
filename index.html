@@ -1,1 +1,38 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    	<meta charset="UTF-8">
+<meta name ="viewport" content ="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>初めてのBootstrap</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css">
+</head>
 
+<body>
+<!-- タブ・メニュー kapcel-->
+<ul class="nav nav-pills">
+	<li class="active"><a href="#sampleContentA" data-toggle="tab">Topページ</a></li>
+	<li><a href="#sampleContentB" data-toggle="tab">タブＢ</a></li>
+	<li><a href="#sampleContentC" data-toggle="tab">タブＣ</a></li>
+	<li><a href="#sampleContentD" data-toggle="tab">タブＤ</a></li>
+</ul>
+
+<!-- タブ内容 -->
+<div class="tab-content">
+	<div class="tab-pane active" id="sampleContentA">
+		<p>ここはTopページです！</p>
+	</div>
+	<div class="tab-pane" id="sampleContentB">
+		<p>タブＢの内容</p>
+	</div>
+	<div class="tab-pane" id="sampleContentC">
+		<p>タブＣの内容</p>
+	</div>
+	<div class="tab-pane" id="sampleContentD">
+		<p>タブＤの内容</p>
+	</div>
+</div>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>
+</body>
+</html>
