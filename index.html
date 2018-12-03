@@ -5,32 +5,79 @@
 <meta name ="viewport" content ="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<title>初めてのBootstrap</title>
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"> 
-
+<link href="https://stackpath.bootstrapcdn.com/bootswatch/4.1.3/sketchy/bootstrap.min.css" rel="stylesheet" integrity="sha384-5cy8WdlNAGqQwyB33aLiqJoRQQxZsc3TDUkSTahHAx2gMK3o0te7Xqm+nNLe4Ou3" crossorigin="anonymous">
 </head>
 
 <body>
-<!-- タブ・メニュー kapcel-->
-<ul class="nav nav-pills">
-	<li class="active"><a href="#sampleContentA" data-toggle="tab">Topページ</a></li>
-	<li><a href="#sampleContentB" data-toggle="tab">タブＢ</a></li>
-	<li><a href="#sampleContentC" data-toggle="tab">タブＣ</a></li>
-	<li><a href="#sampleContentD" data-toggle="tab">タブＤ</a></li>
+<nav class ="navbar navbar-expand-lg navbar-light bg-light">
+<a class="navbar-brand" href="#">Menu</a>
+<div class="collapse navbar-collapse" id="navbarSupportedContent">
+<ul class="nav nav-pills nav-fill" id="pills-tab" role="tablist">
+	<li class="nav-item">
+    <a class="nav-link active" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">TopPage</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">How to This Page</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">Form</a>
+  </li>
+  <li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Setting</a>
+    <div class="dropdown-menu">
+ <a class="dropdown-item" href="#">設定が</a>
+      <a class="dropdown-item" href="#">できると</a>
+      <a class="dropdown-item" href="#">思ったか。</a>
+      <div class="dropdown-divider"></div>
+      <a class="dropdown-item" href="#">そこまでできん</a>
+    </div>
+  </li>
 </ul>
-
+</div>
+</nav>
 <!-- タブ内容 -->
-<div class="tab-content">
-	<div class="tab-pane active" id="sampleContentA">
-		<p>ここはTopページです！</p>
-	</div>
-	<div class="tab-pane" id="sampleContentB">
-		<p>タブＢの内容</p>
-	</div>
-	<div class="tab-pane" id="sampleContentC">
-		<p>タブＣの内容</p>
-	</div>
-	<div class="tab-pane" id="sampleContentD">
-		<p>タブＤの内容</p>
-	</div>
+<div class="tab-content" id="pills-tabContent">
+  <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+ここはTopページです！！！
+<div class="alert alert-success" role="alert">
+  みどりん
+</div>
+<div class="alert alert-danger" role="alert">
+  あかいん
+</div>
+<div class="alert alert-warning" role="alert">
+  きいろん
+</div>
+<div class="alert alert-info" role="alert">
+ あおろん
+</div>
+<div class="alert alert-light" role="alert">
+  しろろん
+</div>
+<div class="card" style="width: 18rem;">
+  <img class="card-img-top" src="img/pon.png" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title">こういうけい</h5>
+    <p class="card-text">かわいいかい？</p>
+    <a href="#" class="btn btn-primary">かわいい！</a>
+  </div>
+</div>
+</div>
+  <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+Bootstrapの初心者が頑張って作ったサイトです。
+</div>
+  <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+<form>
+  <div class="row">
+    <div class="col">
+      <input type="text" class="form-control" placeholder="First name">
+    </div>
+    <div class="col">
+      <input type="text" class="form-control" placeholder="Last name">
+    </div>
+  </div>
+</form>
+</div>
 </div>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
